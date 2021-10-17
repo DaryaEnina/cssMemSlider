@@ -26,8 +26,9 @@ h1 {
   height: 90vh;
   margin: 0 auto;
   overflow: hidden;
-  border: 2rem solid black;
-  background-color: #000000;
+  border: 2rem solid #4f2d6c;
+  border-radius: 5%;
+  background-color: #4f2d6c;
   display: block;
 }
 .slides {
@@ -109,7 +110,7 @@ input[name="ipt"] {
 .text p {
   width: 100%;
   font-family: "Caveat", cursive;
-  font-size: xx-large;
+  font-size: xxx-large;
   color: #d57ff7;
 }
 input[name="inpt"] {
