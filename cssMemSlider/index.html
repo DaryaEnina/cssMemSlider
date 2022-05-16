@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cssMemSlider</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/reset.css">
-</head>
-<body>
-  <div class="mem-slider middle">
-    <h1>CssMemSlider</h1>
-    
-    <input type="radio" name="ipt" id="el1" checked>
-    <input type="radio" name="ipt" id="el2">
-    <input type="radio" name="ipt" id="el3">
-    <input type="radio" name="ipt" id="el4">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cssMemSlider</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/reset.css" />
+  </head>
+  <body>
+    <div class="mem-slider middle">
+      <h1>CssMemSlider</h1>
 
-    <div class="slides">
-        <div class="slide sl1"><img src="assets/mem/3.png"></div>
-        <div class="slide "><img src="assets/mem/4.jpg"></div>
-        <div class="slide " ><img src="assets/mem/2.jpg"></div>
-        <div class="slide " ><img src="assets/mem/1.jpg"></div>
-    </div>
-    
-    <div class="slide-bullets">
-        <label for="el1"  class="bullet"></label>
-        <label for="el2"  class="bullet"></label>
-        <label for="el3"  class="bullet"></label>
-        <label for="el4"  class="bullet"></label>
-    </div>
+      <input type="radio" name="ipt" id="el1" checked />
+      <input type="radio" name="ipt" id="el2" />
+      <input type="radio" name="ipt" id="el3" />
+      <input type="radio" name="ipt" id="el4" />
 
-    <div class="slide-text">
-      <div class="text sl2" ><p>"Dream" Task</p></div>
-      <div class="text"><p>Прорвемся!</p></div>
-      <div class="text"><p>Нет безвыходных ситуаций</p></div>
-      <div class="text"><p>О любви к Git</p></div>
+      <div class="slides">
+        <div class="slide sl1"><img src="assets/mem/3.png" /></div>
+        <div class="slide"><img src="assets/mem/4.jpg" /></div>
+        <div class="slide"><img src="assets/mem/2.jpg" /></div>
+        <div class="slide"><img src="assets/mem/1.jpg" /></div>
+      </div>
+
+      <div class="slide-bullets">
+        <div class="bullet__wrapp bw1">
+          <label for="el1" class="bullet lab1">
+            <div class="labl"></div>
+          </label>
+        </div>
+        <div class="bullet__wrapp bw2">
+          <label for="el2" class="bullet lab2">
+            <div class="labl"></div>
+          </label>
+        </div>
+        <div class="bullet__wrapp bw3">
+          <label for="el3" class="bullet">
+            <div class="labl"></div>
+          </label>
+        </div>
+        <div class="bullet__wrapp bw4">
+          <label for="el4" class="bullet">
+            <div class="labl"></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="slide-text">
+        <div class="text sl2"><p>"Dream" Task</p></div>
+        <div class="text"><p>Прорвемся!</p></div>
+        <div class="text"><p>Нет безвыходных ситуаций</p></div>
+        <div class="text"><p>О любви к Git</p></div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
