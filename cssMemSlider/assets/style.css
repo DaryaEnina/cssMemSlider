@@ -60,31 +60,21 @@ input[name="ipt"] {
 }
 
 .bullet {
-  width: 50%;
-  height: 50%;
-  border: 0.2rem solid #d57ff7;
-  border-radius: 50%;
-  background-color: #d57ff7;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer;
   z-index: 2;
   transition: all 2s ease;
   padding: 0.9rem;
-  position: absolute;
-  top: 26%;
-  left: 22%;
 }
 .labl {
-  width: 4rem;
-  height: 7rem;
-  top: -102%;
-  left: -60%;
-  position: absolute;
-}
-.bullet__wrapp {
-  width: 4rem;
-  height: 5rem;
-  cursor: pointer;
-  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border: 0.2rem solid #d57ff7;
+  border-radius: 50%;
+  background-color: #d57ff7;
+  transition: all 2s ease;
+  padding: 0.9rem;
 }
 @keyframes bounce {
   0%,
@@ -105,7 +95,7 @@ input[name="ipt"] {
     transform: translateY(-10px);
   }
 }
-.bullet:hover {
+.labl:hover {
   background-color: #ffffff;
   animation: bounce 1s;
 }
@@ -162,16 +152,16 @@ input[name="inpt"] {
 }
 
 /*bullets*/
-#el1:checked ~ .slide-bullets .bw1 .bullet {
+#el1:checked ~ .slide-bullets .blt1 .lb1 {
   background-color: transparent;
 }
-#el2:checked ~ .slide-bullets .bw2 .bullet {
+#el2:checked ~ .slide-bullets .blt2 .lb2 {
   background-color: transparent;
 }
-#el3:checked ~ .slide-bullets .bw3 .bullet {
+#el3:checked ~ .slide-bullets .blt3 .lb3 {
   background-color: transparent;
 }
-#el4:checked ~ .slide-bullets .bw4 .bullet {
+#el4:checked ~ .slide-bullets .blt4 .lb4 {
   background-color: transparent;
 }
 
