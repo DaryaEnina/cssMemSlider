@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@700&display=swap");
+html {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: #d57ff7;
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.mem-slider {
+  max-width: 80%;
+  height: 90vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2rem solid #4f2d6c;
+  border-radius: 5%;
+  background-color: #4f2d6c;
+  display: block;
+}
+.slides {
+  display: flex;
+  width: 400%;
+  height: 70%;
+}
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+  background-color: #f5dbf7;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+input[name="ipt"] {
+  display: none;
+}
+/*Navigation*/
+
+.slide-bullets {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 2%;
+}
+
+.bullet {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 2s ease;
+  padding: 0.9rem;
+}
+.labl {
+  width: 2rem;
+  height: 2rem;
+  border: 0.2rem solid #d57ff7;
+  border-radius: 50%;
+  background-color: #d57ff7;
+  transition: all 2s ease;
+  padding: 0.9rem;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.labl:hover {
+  background-color: #ffffff;
+  animation: bounce 1s;
+}
+/*slider text */
+.slide-text {
+  margin-top: -6%;
+  width: 400%;
+  display: flex;
+  z-index: 1;
+}
+.text {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.text:hover {
+  animation: bounce 1s;
+}
+.text p {
+  width: 100%;
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  color: #d57ff7;
+}
+input[name="inpt"] {
+  display: none;
+}
+/*slider text end*/
+
+#el1:checked ~ .slides .sl1 {
+  margin-left: 0;
+}
+#el2:checked ~ .slides .sl1 {
+  margin-left: -25%;
+}
+#el3:checked ~ .slides .sl1 {
+  margin-left: -50%;
+}
+#el4:checked ~ .slides .sl1 {
+  margin-left: -75%;
+}
+/*слайдер текста*/
+
+#el1:checked ~ .slide-text .sl2 {
+  margin-left: 0;
+}
+#el2:checked ~ .slide-text .sl2 {
+  margin-left: -25%;
+}
+#el3:checked ~ .slide-text .sl2 {
+  margin-left: -50%;
+}
+#el4:checked ~ .slide-text .sl2 {
+  margin-left: -75%;
+}
+
+/*bullets*/
+#el1:checked ~ .slide-bullets .blt1 .lb1 {
+  background-color: transparent;
+}
+#el2:checked ~ .slide-bullets .blt2 .lb2 {
+  background-color: transparent;
+}
+#el3:checked ~ .slide-bullets .blt3 .lb3 {
+  background-color: transparent;
+}
+#el4:checked ~ .slide-bullets .blt4 .lb4 {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1100px) {
+  .slide-bullets {
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  .slide-text {
+    justify-content: center;
+    text-align: center;
+  }
+}
